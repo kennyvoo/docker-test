@@ -1,3 +1,9 @@
-FROM ubuntu:20.04
+FROM python:latest
 
-CMD echo "Hello World"
+RUN pip install matplotlib
+
+
+WORKDIR /usr/local/bin
+
+COPY . .   
+CMD [ "python", "generate_random_numbers.py"]
