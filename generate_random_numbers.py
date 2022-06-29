@@ -1,4 +1,6 @@
 import random
+import matplotlib
+matplotlib.use( 'tkagg' )
 import matplotlib.pyplot as plt
 
 rand_nums= [random.randint(1,10) for i in range(10)]

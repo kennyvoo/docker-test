@@ -1,9 +1,3 @@
-FROM python:latest
-
-# RUN pip install matplotlib
-
-
-WORKDIR /usr/local/bin
+FROM python:3.8-slim
 
 COPY . .   
-# CMD [ "python", "generate_random_numbers.py"]
