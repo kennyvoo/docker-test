@@ -9,3 +9,4 @@ RUN apt update \
 
 
 COPY . .   
+CMD ["python","generate_random_numbers.py"]
